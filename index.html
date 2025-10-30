@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoGalaxy — Мир автомобилей</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/лого.png">
+</head>
+<body>
+
+    <!-- ===== PRELOADER (анимация загрузки) ===== -->
+<div id="preloader">
+  <div class="preloader-content">
+    <div class="spinner"></div>
+    <h2 class="loading-text">AutoGalaxy</h2>
+  </div>
+</div>
+
+    <!-- Progress bar  -->
+<div id="page-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div id="page-progress__bar" aria-hidden="true"></div>
+  <span id="page-progress__label" class="visually-hidden">Прогресс страницы</span>
+</div>
+
+  <!-- ===== HEADER ===== -->
+  <header id="home">
+    <div class="logo">
+      <h1>AutoGalaxy</h1>
+    </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#hero">Главная</a></li>
+      <li><a href="#catalog">Каталог</a></li>
+      <li><a href="#about">О компании</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <!-- Бургер -->
+  <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </header>
+
+
+  <!-- ===== HERO SECTION / VIDEO BACKGROUND ===== -->
+  <section id="hero" class="parallax-bg">
+    <video autoplay muted loop playsinline>
+      <source src="video/главная.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+    <div class="hero-content">
+       <h2 id="typing-text"></h2>
+      <p>Мы объединяем технологии будущего с любовью к автомобилям. Найди свой идеальный авто уже сегодня!</p>
+      <a href="#catalog" class="btn">Смотреть каталог</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="parallax-bg">
+    <h2>О компании AutoGalaxy</h2>
+    <p>AutoGalaxy — это современный автосалон, где каждый найдет идеальный автомобиль. Мы предлагаем электромобили, спортивные купе, кроссоверы и премиум-седаны. Вся техника проходит тщательную проверку и имеет официальную гарантию.</p>
+    
+    <div class="about-gallery">
+      <img src="img/автосалон.png" alt="салон автомобиля">
+      <img src="img/электрокар на зарядке.png" alt="электрокар на зарядке">
+      <img src="img/тест драйв.png" alt="тест-драйв">
+    </div>
+
+    <div class="about-info">
+      <h3>Почему выбирают нас:</h3>
+      <ul>
+        <li>⚡ Только сертифицированные автомобили</li>
+        <li>💼 Гарантия и поддержка 24/7</li>
+        <li>🚗 Бесплатный тест-драйв и доставка</li>
+        <li>🌍 Забота об экологии — только современные технологии</li>
+      </ul>
+      <a href="#catalog" class="btn">Узнать больше</a>
+    </div>
+  </section>
+
+  <!-- ===== CATALOG ===== -->
+<section id="catalog">
+  <h2>Каталог автомобилей</h2>
+
+  <div class="catalog-grid">
+    <!-- ===== ПЕРВЫЕ 8 ВИДИМЫХ КАРТОЧЕК ===== -->
+    <div class="car-card">
+      <img src="img/tesla model s.jpg" alt="Tesla Model S">
+      <h3>Tesla Model S</h3>
+      <p>Электрический седан премиум-класса с невероятным ускорением.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card">
+      <img src="img/bmw i4.jpg" alt="BMW i4">
+      <h3>BMW i4</h3>
+      <p>Совершенный баланс мощности, динамики и технологии BMW.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card">
+      <img src="img/Audi e-tron GT.jpg" alt="Audi e-tron GT">
+      <h3>Audi e-tron GT</h3>
+      <p>Современный спортивный электрический автомобиль с характером.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card">
+      <img src="img/Ford Mustang Mach-E.jpg" alt="Ford Mustang Mach-E">
+      <h3>Ford Mustang Mach-E</h3>
+      <p>Электрический Mustang — энергия легенды в новом воплощении.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card">
+      <img src="img/Volkswagen ID.4.jpg" alt="Volkswagen ID.4">
+      <h3>Volkswagen ID.4</h3>
+      <p>Кроссовер будущего — комфорт, безопасность и стиль VW.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card">
+      <img src="img/Volvo EX30.jpg" alt="Volvo EX30">
+      <h3>Volvo EX30</h3>
+      <p>Скандинавский дизайн, безопасность и экологичность в одном.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card">
+      <img src="img/BYD Seal.jpg" alt="BYD Seal">
+      <h3>BYD Seal</h3>
+      <p>Элегантный электроседан с высокими технологиями и мощным запасом хода.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card">
+      <img src="img/Polestar 2.jpg" alt="Polestar 2">
+      <h3>Polestar 2</h3>
+      <p>Шведская инженерия и минимализм — идеальный баланс мощности и стиля.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <!-- ===== СКРЫТЫЕ КАРТОЧКИ ===== -->
+    <div class="car-card hidden-car">
+      <img src="img/Porsche Taycan.jpg" alt="Porsche Taycan">
+      <h3>Porsche Taycan</h3>
+      <p>Символ мощности и элегантности в мире электрокаров.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card hidden-car">
+      <img src="img/Mercedes EQS.jpg" alt="Mercedes EQS">
+      <h3>Mercedes EQS</h3>
+      <p>Роскошь, комфорт и технологии будущего от Mercedes-Benz.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card hidden-car">
+      <img src="img/Lucid Air.jpg" alt="Lucid Air">
+      <h3>Lucid Air</h3>
+      <p>Американский электрокар с рекордным запасом хода и стилем.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card hidden-car">
+      <img src="img/Nissan Ariya.jpg" alt="Nissan Ariya">
+      <h3>Nissan Ariya</h3>
+      <p>Электрический кроссовер с футуристичным дизайном и комфортом.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card hidden-car">
+      <img src="img/Hyundai Ioniq 6.jpg" alt="Hyundai Ioniq 6">
+      <h3>Hyundai Ioniq 6</h3>
+      <p>Аэродинамика, скорость и стиль в каждой линии кузова.</p>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="car-card hidden-car">
+      <img src="img/Kia EV6.jpg" alt="Kia EV6">
+      <h3>Kia EV6</h3>
+      <p>Дерзкий дизайн и мгновенный отклик — для тех, кто выбирает драйв.</p>
+      <button>Подробнее</button>
+    </div>
+  </div>
+
+
+  <div class="catalog-buttons">
+    <a href="#" class="btn show-more">Показать больше</a>
+  </div>
+</section>
+
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+  <h2>Часто задаваемые вопросы</h2>
+
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Можно ли оформить рассрочку или кредит?
+      </div>
+      <div class="faq-answer">
+        Да, мы сотрудничаем с ведущими банками и предлагаем удобные условия рассрочки и автокредита.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Где можно пройти тест-драйв?
+      </div>
+      <div class="faq-answer">
+        Тест-драйв проводится в нашем центре. Просто оставьте заявку, и менеджер свяжется с вами.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Какие документы нужны для покупки?
+      </div>
+      <div class="faq-answer">
+        Для оформления автомобиля потребуется паспорт, водительское удостоверение и способ оплаты.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Можно ли заказать авто из-за границы?
+      </div>
+      <div class="faq-answer">
+        Да, мы предоставляем услугу индивидуального заказа автомобиля под ключ с таможенным оформлением.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Есть ли гарантия на электромобили?
+      </div>
+      <div class="faq-answer">
+        Да, гарантия от 3 до 8 лет в зависимости от модели и комплектации.
+      </div>
+    </div>
+
+  </div>
+
+  <a href="#contacts" class="btn">Задать свой вопрос</a>
+</section>
+
+
+  <!-- ===== CONTACTS ===== -->
+<section id="contacts" class="parallax-bg">
+  <h2>Контакты</h2>
+  <p>Свяжитесь с нами для консультации, тест-драйва или покупки автомобиля вашей мечты!</p>
+
+  <div class="contacts-container">
+    <div class="contacts-left">
+      <div class="contacts-info">
+        <p>📍 <strong>Адрес:</strong> г. Алматы, пр. Абая 125</p>
+        <p>📞 <strong>Телефон:</strong> +7 (777) 123-45-67</p>
+        <p>✉️ <strong>Email:</strong> info@autogalaxy.kz</p>
+        <p>🕒 <strong>Режим работы:</strong> Пн–Вс 9:00–21:00</p>
+      </div>
+
+      <form class="contact-form">
+        <h3>Оставить заявку</h3>
+
+        <div class="form-group">
+          <input id="name" type="text" required placeholder=" " />
+          <label for="name">Ваше имя</label>
+        </div>
+
+        <div class="form-group">
+          <input id="email" type="email" required placeholder=" " />
+          <label for="email">Ваш email</label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="message" placeholder=" "></textarea>
+          <label for="message">Ваше сообщение</label>
+        </div>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <div class="contacts-right">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d372170.03255280165!2d76.622871930485!3d43.21833184935468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2z0JDQu9C80LDRgtGL!5e0!3m2!1sru!2skz!4v1761445508117!5m2!1sru!2skz" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 AutoGalaxy. Все права защищены.</p>
+    <p>Разработано с ❤️ для автолюбителей.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
